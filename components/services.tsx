@@ -2,6 +2,12 @@ import { Wrench, Cog, Shield, Award } from "lucide-react"
 
 const capabilities = [
   {
+    icon: Shield,
+    title: "Quality Assurance",
+    description:
+      "Rigorous inspection protocols and quality control measures ensure every part meets exacting standards.",
+  },
+  {
     icon: Cog,
     title: "Swiss Lathe Machining",
     description:
@@ -10,18 +16,7 @@ const capabilities = [
   {
     icon: Wrench,
     title: "CNC Milling",
-    description: "Advanced multi-axis CNC milling capabilities for complex geometries and tight specifications.",
-  },
-  {
-    icon: Shield,
-    title: "Quality Assurance",
-    description:
-      "Rigorous inspection protocols and quality control measures ensure every part meets exacting standards.",
-  },
-  {
-    icon: Award,
-    title: "Certified & Licensed",
-    description: "Fully certified and licensed to manufacture firearm components with complete regulatory compliance.",
+    description: "Advanced 5-axis CNC milling capabilities for complex geometries and tight specifications.",
   },
 ]
 
@@ -63,9 +58,9 @@ export function Services() {
           <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Core Competencies</h3>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              "Gun Parts Manufacturing",
+              "Firearms and Outdoor Industry",
               "Precision Swiss Lathe Work",
-              "Multi-Axis CNC Milling",
+              "5-Axis CNC Milling",
               "Tight Tolerance Machining",
               "Quality Control & Inspection",
               "Regulatory Compliance",

@@ -189,7 +189,8 @@ export function Contact() {
 
           <footer className="mt-16 text-center text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} Constitution MFG. All rights reserved.</p>
-            <p className="mt-2">Precision Manufacturing • American Made • Quality Assured</p>
+            <p className="mt-2">Precision Manufacturing • Made in America • Quality Assured</p>
+            <p className="mt-1">1020 South Laurel Street, Springfield, GA 31329</p>
           </footer>
         </div>
       </div>

@@ -7,20 +7,18 @@ export function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center bg-hero-pattern">
       <div className="container mx-auto px-4 py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
-            <p className="text-6xl md:text-8xl font-bold text-primary uppercase tracking-wider">Coming Soon</p>
-          </div>
+          
 
           <ConstitutionLogo className="h-32 w-auto mx-auto mb-8" />
 
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 text-balance">
             Precision Manufacturing
             <br />
-            <span className="text-primary">American Made</span>
+            <span className="text-primary">Made in America</span>
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty leading-relaxed">
-            Constitution MFG delivers uncompromising quality in precision gun parts manufacturing. Built on American
+            Constitution MFG delivers uncompromising quality in precision parts manufacturing. Built on American
             values of excellence, integrity, and craftsmanship.
           </p>
 
