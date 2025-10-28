@@ -20,19 +20,32 @@ export function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitStatus("idle")
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const payload = new FormData()
+      payload.append("name", formData.name)
+      payload.append("email", formData.email)
+      payload.append("company", formData.company)
+      payload.append("phone", formData.phone)
+      payload.append("message", formData.message)
+      files.forEach((file) => payload.append("files", file))
 
-    setIsSubmitting(false)
-    setSubmitStatus("success")
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: payload,
+      })
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
+      if (!res.ok) throw new Error("Failed to send message")
+
+      setSubmitStatus("success")
       setFormData({ name: "", email: "", company: "", phone: "", message: "" })
       setFiles([])
-      setSubmitStatus("idle")
-    }, 3000)
+    } catch (err) {
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -66,7 +79,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-2 bg-background border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
-                  placeholder="John Smith"
+                  placeholder="George Washington"
                 />
               </div>
 
@@ -81,7 +94,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-2 bg-background border border-border rounded focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
-                  placeholder="john@company.com"
+                  placeholder="george@company.com"
                 />
               </div>
             </div>
@@ -188,8 +201,8 @@ export function Contact() {
           </form>
 
           <footer className="mt-16 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Constitution MFG. All rights reserved.</p>
-            <p className="mt-2">Precision Manufacturing • Made in America • Quality Assured</p>
+            <p>© 2025 2A Constitution MFG. All rights reserved.</p>
+            <p className="mt-2">Precision Manufacturing • Made in America • Quality First</p>
             <p className="mt-1">1020 South Laurel Street, Springfield, GA 31329</p>
           </footer>
         </div>

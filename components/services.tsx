@@ -11,7 +11,7 @@ const capabilities = [
     icon: Cog,
     title: "Swiss Lathe Machining",
     description:
-      "State-of-the-art Swiss lathe technology for precision turning operations with tolerances measured in microns.",
+      "State-of-the-art Swiss lathe technology for precision turning operations.",
   },
   {
     icon: Wrench,
