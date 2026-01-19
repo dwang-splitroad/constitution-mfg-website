@@ -5,18 +5,18 @@ const capabilities = [
     icon: Shield,
     title: "Quality Assurance",
     description:
-      "Rigorous inspection protocols and quality control measures ensure every part meets exacting standards.",
+      "Rigorous inspection protocols and quality control ensures every part with Hexagon CMM and Starrett measuring equipment.",
   },
   {
     icon: Cog,
     title: "Swiss Lathe Machining",
     description:
-      "State-of-the-art Swiss lathe technology for precision turning operations.",
+      "State-of-the-art Star Swiss lathe technology for precision turning operations.",
   },
   {
     icon: Wrench,
     title: "CNC Milling",
-    description: "Advanced 5-axis CNC milling capabilities for complex geometries and tight specifications.",
+    description: "Advanced 4-axis and 5-axis CNC milling capabilities for complex geometries and tight specifications.",
   },
 ]
 
@@ -59,10 +59,10 @@ export function Services() {
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               "Firearms and Outdoor Industry",
-              "Precision Swiss Lathe Work",
-              "5-Axis CNC Milling",
+              "Precision Star Swiss Lathe Parts",
+              "4-Axis and 5-Axis CNC Milling",
               "Tight Tolerance Machining",
-              "Quality Control & Inspection",
+              "Hexagon CMM and Starrett measuring equipment",
               "Regulatory Compliance",
             ].map((competency, index) => (
               <div key={index} className="flex items-center gap-2">
