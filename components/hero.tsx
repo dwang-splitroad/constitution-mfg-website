@@ -9,9 +9,9 @@ export function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           
 
-          <ConstitutionLogo className="h-32 w-auto mx-auto mb-8" />
+          <ConstitutionLogo className="w-[95%] md:w-auto h-auto md:h-80 lg:h-96 mx-auto mb-6 md:mb-10" />
 
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-8 text-balance">
+          <h1 className="text-xl md:text-4xl font-bold text-foreground mb-6 md:mb-8 text-balance">
             Precision Manufacturing
             <br />
             <span className="text-primary">Made in America</span>
