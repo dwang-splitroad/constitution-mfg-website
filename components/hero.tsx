@@ -11,16 +11,11 @@ export function Hero() {
 
           <ConstitutionLogo className="h-32 w-auto mx-auto mb-8" />
 
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 text-balance">
+          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-8 text-balance">
             Precision Manufacturing
             <br />
             <span className="text-primary">Made in America</span>
           </h1>
-
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty leading-relaxed">
-            Constitution MFG delivers uncompromising quality in precision parts manufacturing. Built on American
-            values of excellence, integrity, and craftsmanship.
-          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
