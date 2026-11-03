@@ -203,7 +203,7 @@ export function Contact() {
           <footer className="mt-16 text-center text-sm text-muted-foreground">
             <p>© 2025 2A Constitution MFG. All rights reserved.</p>
             <p className="mt-2">Precision Manufacturing • Made in America • Quality First</p>
-            <p className="mt-1">1020 South Laurel Street, Springfield, GA 31329</p>
+            <p className="mt-1">145 Industrial Blvd, Rincon, GA 31326</p>
           </footer>
         </div>
       </div>
