@@ -204,6 +204,14 @@ export function Contact() {
             <p>© 2025 2A Constitution MFG. All rights reserved.</p>
             <p className="mt-2">Precision Manufacturing • Made in America • Quality First</p>
             <p className="mt-1">145 Industrial Blvd, Rincon, GA 31326</p>
+            <p className="mt-2">
+              <a
+                href="/AS9100%20Purchase%20Order%20Terms%20and%20Conditions.docx"
+                className="underline underline-offset-4 hover:text-foreground transition-colors"
+              >
+                Terms &amp; Conditions
+              </a>
+            </p>
           </footer>
         </div>
       </div>
