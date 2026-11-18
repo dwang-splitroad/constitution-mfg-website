@@ -206,7 +206,7 @@ export function Contact() {
             <p className="mt-1">145 Industrial Blvd, Rincon, GA 31326</p>
             <p className="mt-2">
               <a
-                href="/AS9100%20Purchase%20Order%20Terms%20and%20Conditions.docx"
+                href="/AS9100_Purchase_Order_Terms_and_Conditions.docx"
                 className="underline underline-offset-4 hover:text-foreground transition-colors"
               >
                 Terms &amp; Conditions

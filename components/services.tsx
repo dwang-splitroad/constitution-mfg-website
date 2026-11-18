@@ -1,22 +1,11 @@
-import { Wrench, Cog, Shield, Award } from "lucide-react"
+import { Shield, Award } from "lucide-react"
 
 const capabilities = [
   {
     icon: Shield,
     title: "Quality Assurance",
     description:
-      "Rigorous inspection protocols and quality control ensures every part with Hexagon CMM and Starrett measuring equipment.",
-  },
-  {
-    icon: Cog,
-    title: "Swiss Lathe Machining",
-    description:
-      "State-of-the-art Star Swiss lathe technology for precision turning operations.",
-  },
-  {
-    icon: Wrench,
-    title: "CNC Milling",
-    description: "Advanced 4-axis and 5-axis CNC milling capabilities for complex geometries and tight specifications.",
+      "Constitution Mfg is committed to meeting customer requirements; we strive for Continuous Improvement in our products and our people.",
   },
 ]
 
@@ -32,7 +21,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid gap-8 max-w-3xl mx-auto">
           {capabilities.map((capability, index) => {
             const Icon = capability.icon
             return (
@@ -58,11 +47,11 @@ export function Services() {
           <h3 className="text-2xl font-bold text-foreground mb-4 text-center">Core Competencies</h3>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              "Firearms and Outdoor Industry",
-              "Precision Star Swiss Lathe Parts",
+              "Aerospace and Defense Industries",
+              "Precision Swiss Parts",
               "4-Axis and 5-Axis CNC Milling",
               "Tight Tolerance Machining",
-              "Hexagon CMM and Starrett measuring equipment",
+              "State-of-the-art inspection equipment",
               "Regulatory Compliance",
             ].map((competency, index) => (
               <div key={index} className="flex items-center gap-2">
